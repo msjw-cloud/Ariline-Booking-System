@@ -1,0 +1,11 @@
+#delteTicket{
+    -fx-background-color:#141e30;
+    -fx-background-radius:40px;
+    -fx-text-fill:#fff;
+    -fx-cursor:hand;
+
+}
+
+#delteTicket: hover{
+    -fx-background-color:#243b55;
+}

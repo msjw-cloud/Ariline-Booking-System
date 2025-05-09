@@ -1,0 +1,67 @@
+/*.root{
+    -fx-background-color:#222222;
+}
+
+.label{
+    -fx-text-fill: "White";
+    -fx-font-size:20;
+    -fx-font-family: "Lucida Console";
+    -fx-alignment: center;
+}
+
+#label01{
+    -fx-font-size:60;
+}
+
+*/
+
+#login_background{
+    -fx-background-color:linear-gradient(to bottom right, #141e30,#243b55);
+    -fx-border-radius:100px;
+
+
+}
+
+#Login_username{
+    -fx-background-color:transparent;
+    -fx-border-color:#2c6eb5;
+    -fx-text-inner-color:#fff;
+}
+#Login_password{
+    -fx-background-color:transparent;
+    -fx-border-color:#2c6eb5;
+    -fx-text-inner-color:#fff;
+}
+
+#login_hyperlink{
+    -fx-border-color:none;
+    -fx-border-width:0px;
+}
+
+#login_hyperlink: hover{
+    -fx-text-fill: white;
+}
+
+#Signin_button{
+    -fx-background-color:#141e30;
+    -fx-background-radius:40px;
+    -fx-text-fill:#fff;
+    -fx-cursor:hand;
+
+}
+
+#Signin_button: hover{
+    -fx-background-color:#243b55;
+}
+
+.check-box .box{
+    -fx-background-color: transparent;
+    -fx-border-color:#74e8ff;
+    -fx-border-radius:7px;
+}
+
+.check-box:selected .mark{
+    -fx-background-color: #74e8ff;
+
+}
+

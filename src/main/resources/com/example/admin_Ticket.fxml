@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="530.0" prefWidth="490.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.admin_TicketController">
+   <children>
+      <VBox prefHeight="530.0" prefWidth="490.0" stylesheets="@admin_Ticket.css">
+         <children>
+            <HBox prefHeight="31.0" prefWidth="490.0">
+               <children>
+                  <ImageView fitHeight="28.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../search.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </ImageView>
+                  <TextField fx:id="ticket_search" promptText="Ticket ID">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <TableView fx:id="table" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="ticketID" prefWidth="108.66668951511383" text="ticketID" />
+                <TableColumn fx:id="user" prefWidth="64.6666488647461" text="user" />
+                  <TableColumn fx:id="flightID" prefWidth="105.33332824707031" text="flightID" />
+                  <TableColumn fx:id="seatID" prefWidth="76.0" text="seatID" />
+                  <TableColumn fx:id="totalPrice" prefWidth="134.0" text="totalPrice" />
+              </columns>
+            </TableView>
+            <VBox prefHeight="133.0" prefWidth="590.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="149.0" style="-fx-background-color: transparent;" text="ADD/REMOVE Records" textFill="WHITE">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </VBox.margin>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="tid_" editable="false" prefHeight="30.0" prefWidth="70.0" promptText="TICKET-ID" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ACBFCC;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="user_" prefHeight="30.0" prefWidth="70.0" promptText="USER" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ACBFCC;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="flightid_" prefHeight="30.0" prefWidth="70.0" promptText="FLIGHT-ID" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ACBFCC;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="seatid_" prefHeight="30.0" prefWidth="70.0" promptText="SEAT-ID" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ACBFCC;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                        <TextField fx:id="totalprice_" prefHeight="30.0" prefWidth="90.0" promptText="TOTAL-PRICE" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ACBFCC;">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="buttonINSERT" mnemonicParsing="false" onAction="#insertToTicketTable" stylesheets="@adminPage.css" text="INSERT" textFill="WHITE">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="20.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="buttonDELETE" mnemonicParsing="false" onAction="#delteFromTicketTable" stylesheets="@adminPage.css" text="Button">
+                           <HBox.margin>
+                              <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="buttonUPDATE" mnemonicParsing="false" onAction="#updateTicektTable" stylesheets="@adminPage.css" text="UPDATE">
+                           <HBox.margin>
+                              <Insets bottom="4.0" left="35.0" right="5.0" top="7.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

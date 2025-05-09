@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.WaitlistPageController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="245.0">
+         <children>
+            <TableView fx:id="table" prefHeight="200.0" prefWidth="194.0">
+              <columns>
+                <TableColumn fx:id="seat_id" minWidth="0.0" prefWidth="71.99999749660492" text="seat-id" />
+                  <TableColumn fx:id="flight_id" prefWidth="54.6666259765625" text="flight-id" />
+                <TableColumn fx:id="type" prefWidth="46.66668701171875" text="type" />
+                  <TableColumn fx:id="waitlist" prefWidth="59.33338165283203" text="waitlist" />
+              </columns>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </VBox.margin>
+            </TableView>
+            <HBox prefHeight="44.0" prefWidth="236.0">
+               <children>
+                  <TextField fx:id="enterF" prefHeight="27.0" prefWidth="158.0" promptText="Enter Flight ID" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ACBFCC;">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <ImageView fitHeight="27.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../search.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="7.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox prefHeight="37.0" prefWidth="222.0">
+               <children>
+                  <Label fx:id="seat_type_label" alignment="CENTER" prefHeight="25.0" prefWidth="128.0" style="-fx-font-family: Georgia; -fx-text-fill: #061540;" text="Seat-Type: ">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="waitlist_status_label" alignment="CENTER" prefHeight="25.0" prefWidth="128.0" style="-fx-text-fill: #061540; -fx-font-family: Georgia;" text="Waitlist-Status: ">
+                     <padding>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox prefHeight="44.0" prefWidth="236.0">
+               <children>
+                  <TextField fx:id="enterS" prefHeight="27.0" prefWidth="158.0" promptText="Enter O/C (OPEN/CLOSE)" style="-fx-background-color: transparent; -fx-border-width: 0px 0px 2px 0px; -fx-border-color: #ACBFCC;">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+                  <Button fx:id="changeS" mnemonicParsing="false" onAction="#change_seat_status" prefHeight="25.0" prefWidth="62.0" stylesheets="@waitlist.css" text="change">
+                     <HBox.margin>
+                        <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

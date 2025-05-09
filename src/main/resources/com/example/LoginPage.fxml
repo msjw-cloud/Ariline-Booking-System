@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="login_background" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" stylesheets="@LoginPage.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.LoginPageController">
+   <children>
+      <ImageView fx:id="plainImage" fitHeight="398.0" fitWidth="541.0" layoutX="-378.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../plain.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutY="281.0" prefHeight="244.0" prefWidth="400.0">
+         <children>
+            <Label layoutX="158.0" layoutY="84.0" text="KFUPM">
+               <textFill>
+                  <LinearGradient endX="0.810725577622182" endY="0.8328075724821362" startY="0.1608832807570978">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16796621680259705" green="0.27333223819732666" blue="0.38596490025520325" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Italic" size="28.0" />
+               </font>
+            </Label>
+            <Label layoutX="79.0" layoutY="122.0" text="Airline booking system">
+               <textFill>
+                  <LinearGradient endX="0.08517350157728706" endY="0.5835961904435504" startX="1.0" startY="0.7791798438183516">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.16796621680259705" green="0.27333223819732666" blue="0.38596490025520325" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <font>
+                  <Font name="System Italic" size="26.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="413.0" layoutY="5.0" prefHeight="526.0" prefWidth="283.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="420.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <TextField fx:id="Login_username" layoutX="62.0" layoutY="323.0" promptText="Username" />
+            <PasswordField fx:id="Login_password" layoutX="62.0" layoutY="358.0" promptText="Password" />
+            <Hyperlink fx:id="login_hyperlink" layoutX="75.0" layoutY="447.0" onAction="#switchToSignUpPage" text="create a new account?" underline="true" />
+            <Button fx:id="Signin_button" layoutX="111.0" layoutY="421.0" mnemonicParsing="false" onAction="#switchToPassengerHP" text="Sign in" />
+            <ImageView fitHeight="398.0" fitWidth="414.0" layoutX="-59.0" layoutY="-75.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Users.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="82.0" layoutY="194.0" text="SIGN IN">
+               <font>
+                  <Font name="Bold Italic Art" size="35.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="0.9179810740594232">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.3499999940395355" green="0.9241666793823242" blue="1.0" opacity="0.9365482330322266" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.48456791043281555" green="0.9398662447929382" blue="1.0" opacity="0.9399999976158142" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+               <effect>
+                  <DropShadow />
+               </effect>
+            </Label>
+            <CheckBox fx:id="Login_admin" layoutX="99.0" layoutY="282.0" mnemonicParsing="false" text="Admin" underline="true">
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="1.0" startY="0.18927444794952678">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.45490196347236633" green="0.9098039269447327" blue="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </CheckBox>
+            <Label fx:id="LginPage_error" layoutX="52.0" layoutY="386.0" textFill="#ff6060" underline="true" />
+         </children>
+      </AnchorPane>
+
+   </children>
+</AnchorPane>

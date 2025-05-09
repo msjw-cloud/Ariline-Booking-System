@@ -1,0 +1,30 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "echo",
+            "type": "shell",
+            "command": "echo Hello"
+        },
+        
+        {
+           "label": "Open in Scene Builder",
+           "type": "shell",
+           "command": "powershell",
+           "args": [
+             "-Command",
+             "& 'C:\\SceneBuilder\\SceneBuilder.exe' '${file}'"
+           ],
+           "group": "none",
+           "presentation": {
+         "echo": true,
+             "reveal": "never",
+             "focus": false,
+             "panel": "shared"
+           },
+           "problemMatcher": []
+         }
+    ]
+}

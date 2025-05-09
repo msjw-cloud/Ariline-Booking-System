@@ -1,0 +1,108 @@
+#php_rightPane{
+    -fx-background-color:linear-gradient(to bottom right, #003552,#55788B);
+    -fx-border-width: 2px 2px 2px 2px;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-border-color:#003552;
+    -fx-border-style: solid;
+
+
+}
+
+#php_background{
+    -fx-background-color:linear-gradient(to bottom right, #2A455E,#1C2E3E);
+}
+
+.table-view{
+    -fx-background-color: linear-gradient(to bottom right, #B9CDD7,#E7EEF1);
+    -fx-border-color: #001425;
+    -fx-border-width:1px;
+    /*-fx-border-radius: 20px;
+    -fx-background-radius:20px;*/
+    -fx-text-fill:#ffffff;
+    -fx-font-family: "Georgia"; /* Use the system's default font family */
+    -fx-font-weight: normal;
+    -fx-font-style: normal;
+}
+.table-column{
+    -fx-background-color: #001E37;
+    -fx-border-color:#B9CDD7;
+    -fx-text-fill:#99AEC7;
+
+}
+.table-column:hover {
+    -fx-background-color: #B9CDD7;
+     -fx-text-fill:#001E37; /* Change the background color when hovering over rows */
+}
+
+.table-cell{
+    -fx-text-fill:#ffffff;
+}
+
+.column-header .label{
+    -fx-text-fill:#ffffff;
+    -fx-font-weight: normal;
+    -fx-font-style: normal;     /* Change the background color of column headers */
+}
+
+.scroll-bar:vertical .thumb {
+    -fx-background-color: #001E37;
+
+     /* Change the color of the vertical scrollbar thumb */
+}
+
+.scroll-bar:vertical .track {
+    -fx-background-color: #E7EEF1; /* Change the color of the vertical scrollbar track */
+}
+
+.scrollbar {
+    -fx-background-color: #E7EEF1;
+}
+
+.scroll-bar .thumb:pressed {
+    -fx-background-color: #001E37; /* Change the color of the scrollbar thumb when pressed */
+}
+
+.scroll-bar .thumb:hover {
+    -fx-background-color: #E7EEF1;
+     -fx-border-color: #001E37;
+     -fx-border-radius:5px;         /* Change the color of the scrollbar thumb when hovered */
+}
+.table-row-cell:hover {
+    -fx-background-color: #B9CDD7; /* Change the background color when hovering over rows */
+    -fx-text-fill: #001E37; /* Change the text color when hovering over rows */
+}
+
+#addTicket{
+    -fx-background-color:#141e30;
+        -fx-background-radius:40px;
+        -fx-text-fill:#fff;
+        -fx-cursor:hand;
+}
+#addTicket:hover {
+    -fx-background-color:#E7EEF1;
+    -fx-text-fill:#061540;
+}
+
+#booking:hover {
+    -fx-background-color:#E7EEF1;
+    -fx-text-fill:#061540;
+}
+
+
+#ticket:hover {
+    -fx-background-color:#E7EEF1;
+    -fx-text-fill:#061540;
+}
+
+#payment:hover {
+    -fx-background-color:#E7EEF1;
+    -fx-text-fill:#061540;
+}
+
+
+
+
+//light bule: B9CDD7
+dark blue: 001E37
+approximate wighte: E7EEF1

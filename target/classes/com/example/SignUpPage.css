@@ -1,0 +1,50 @@
+#signUp_background{
+    -fx-background-color: linear-gradient(to bottom right, #141e30,#243b55);
+}
+
+#SignUp_username{
+    -fx-background-color:transparent;
+    -fx-border-color:#2c6eb5;
+    -fx-text-inner-color:#fff;
+}
+#SignUp_email{
+    -fx-background-color:transparent;
+    -fx-border-color:#2c6eb5;
+    -fx-text-inner-color:#fff;
+}
+#SignUp_password{
+    -fx-background-color:transparent;
+    -fx-border-color:#2c6eb5;
+    -fx-text-inner-color:#fff;
+}
+
+#SignUp_choiceButton{
+    -fx-background-color:linear-gradient(to bottom right, #ffffff,#6fdae9);
+    -fx-border-color:#2c6eb5;
+}
+
+
+
+#SignUp_hyperlink{
+    -fx-border-color:none;
+    -fx-border-width:0px;
+}
+
+#SignUp_hyperlink: hover{
+    -fx-text-fill: white;
+}
+
+#SignUp_button{
+    -fx-background-color:#141e30;
+    -fx-background-radius:40px;
+    -fx-text-fill:#fff;
+    -fx-cursor:hand;
+
+}
+
+#SignUp_button: hover{
+    -fx-background-color:#243b55;
+}
+
+
+
